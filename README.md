@@ -53,7 +53,7 @@ To interact with and test the API endpoints, you can use **Postman** or the **Th
 - Add request parameters or body data if needed.
 - Send the request and check the response.
 ### HTTP Methods and Their Usage:
-1. Fetch all books (GET)
+**1. Fetch all books (GET)**
    - Used to fetch all the books in the library.
    - This will retrieve a list of all books in the database.
    - Request:
@@ -61,7 +61,7 @@ To interact with and test the API endpoints, you can use **Postman** or the **Th
      GET http://127.0.0.1:8800/books
      ```
 ---
-2. Fetch a specific book (GET)
+**2. Fetch a specific book (GET)**
    - Used to fetch a particular book by its ID.
    - This will get the details of a specific book
    - Request:
@@ -69,11 +69,26 @@ To interact with and test the API endpoints, you can use **Postman** or the **Th
      GET http://127.0.0.1:8800/books/1
      ```
  ---
- 3. Add a new book (POST)
-    - Used to create a new book entry in the library.
-    - Add the book's details (e.g., title,descr,cover) in the request body.
-    - Request:
-    ```bash
-    POST http://127.0.0.1:3000/books
-    ```
+ **3. Add a new book (POST)**
+   - Used to create a new book entry in the library.
+   - Add the book's details (e.g., title,descr,cover) in the request body.
+   - Request:
+     ```bash
+     POST http://127.0.0.1:3000/books
+     ```
 ---
+  **4. Update an existing book (PUT)**
+   - Used to update the details of an existing book by its ID.
+   - Add the ID of the book you want to update.
+   - Request:
+     ```bash
+     PUT http://127.0.0.1:3000/books/1
+     ```
+---
+  **4. Delete a book (DELETE)**
+   - Used to remove a book from the library by its ID.
+   - Add the ID of the book you want to delete.
+   - Request:
+     ```bash
+     PUT http://127.0.0.1:3000/books/1
+     ```
