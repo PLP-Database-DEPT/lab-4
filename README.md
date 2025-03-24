@@ -90,5 +90,5 @@ To interact with and test the API endpoints, you can use **Postman** or the **Th
    - Add the ID of the book you want to delete.
    - Request:
      ```bash
-     PUT http://127.0.0.1:3000/books/1
+     DELETE http://127.0.0.1:3000/books/1
      ```
