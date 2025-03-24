@@ -52,3 +52,10 @@ To interact with and test the API endpoints, you can use **Postman** or the **Th
 - Set the HTTP method (GET, POST, PUT, DELETE) and URL to the corresponding endpoint from your API.
 - Add request parameters or body data if needed.
 - Send the request and check the response.
+### HTTP Methods and Their Usage:
+1. Fetch all books (GET)
+   - Used to fetch all the books in the library.
+   - Request:
+     ```bash
+     GET http://127.0.0.1:8800/books
+     ```
