@@ -6,3 +6,29 @@ This is a simple Library CRUD (Create, Read, Update, Delete) API built using Nod
  - Retrieve all books or a single book by ID
  - Update book details
  - Delete a book from the library
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/PLP-Database-DEPT/lab-4.git
+```
+
+Go to the project directory
+
+```bash
+  cd lab-4
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
