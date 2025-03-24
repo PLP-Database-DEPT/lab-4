@@ -14,7 +14,7 @@ Create a new Database
 ```
 Create a New table
 ```bash
- USE library;
+USE library;
 CREATE TABLE books(
 id int primary key auto_increment,
 title varchar(100) NOT NULL,
