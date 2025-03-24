@@ -10,7 +10,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "1234",
+    password: "", // Add your password
     database: "library",
 });
 
@@ -38,6 +38,28 @@ app.get("/books", (req, res) => {
         }
 
         return res.status(200).json({ message: "Books fetched successfully", data: data });
+    });
+});
+
+// Fetch a single book from the database by its ID
+app.get("/books/:id", (req, res) => {
+    const bookId = req.params.id;  
+
+    const q = "SELECT * FROM books WHERE id = ?";
+
+    db.query(q, [bookId], (err, data) => {
+        if (err) {
+            console.error("Error fetching book details: ", err);
+            return res.status(500).json({ message: "Error fetching book details", error: err });
+        }
+
+        if (data.length === 0) {
+            return res.status(404).json({ message: "Book not found" });
+        }
+        return res.status(200).json({
+            message: "Book details fetched successfully",
+            data: data[0]
+        });
     });
 });
 
