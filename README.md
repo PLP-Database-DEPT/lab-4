@@ -55,7 +55,25 @@ To interact with and test the API endpoints, you can use **Postman** or the **Th
 ### HTTP Methods and Their Usage:
 1. Fetch all books (GET)
    - Used to fetch all the books in the library.
+   - This will retrieve a list of all books in the database.
    - Request:
      ```bash
      GET http://127.0.0.1:8800/books
      ```
+---
+2. Fetch a specific book (GET)
+   - Used to fetch a particular book by its ID.
+   - This will get the details of a specific book
+   - Request:
+     ```bash
+     GET http://127.0.0.1:8800/books/1
+     ```
+ ---
+ 3. Add a new book (POST)
+    - Used to create a new book entry in the library.
+    - Add the book's details (e.g., title,descr,cover) in the request body.
+    - Request:
+    ```bash
+    POST http://127.0.0.1:3000/books
+    ```
+---
