@@ -45,3 +45,10 @@ Start the server
 ```bash
   npm start
 ```
+## Testing the API Endpoints
+To interact with and test the API endpoints, you can use **Postman** or the **Thunder Client** extension.
+### How to Test:
+- Open your chosen tool (Postman or Thunder Client).
+- Set the HTTP method (GET, POST, PUT, DELETE) and URL to the corresponding endpoint from your API.
+- Add request parameters or body data if needed.
+- Send the request and check the response.
